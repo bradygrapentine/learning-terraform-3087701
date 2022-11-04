@@ -4,7 +4,7 @@ variable "instance_type" {
 
 }
 
-variable "ami_filter"
+variable "ami_filter" {
   description = "Name filter and owner for AMI"
 
   type = object({
@@ -18,7 +18,7 @@ variable "ami_filter"
   }
 }
 
-variable "environment"
+variable "environment" {
   description = "Name filter and owner for AMI"
 
   type = object({
@@ -32,12 +32,12 @@ variable "environment"
   }
 }
 
-variable "asg_min_size"
+variable "asg_min_size" {
   description = "Min number of instances"
   default = 1
 }
 
-variable "asg_max_size"
+variable "asg_max_size" {
   description = "Min number of instances"
   default = 2
 }
