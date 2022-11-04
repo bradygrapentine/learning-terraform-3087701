@@ -1,7 +1,6 @@
 variable "instance_type" {
   description = "Type of EC2 instance to provision"
   default     = "t3.nano"
-
 }
 
 variable "ami_filter" {
@@ -28,7 +27,7 @@ variable "environment" {
 
   default = {
     name = "dev"
-    network_prefix = = "10.0" # Bitnami
+    network_prefix = "10.0"
   }
 }
 
